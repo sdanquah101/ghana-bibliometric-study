@@ -19,3 +19,8 @@ __pycache__/
 # Intermediate parquet files
 intermediate_data/
 *.parquet
+
+# Manuscript drafts (kept locally only)
+analysis_results/findings_document.md
+analysis_results/findings_summary.md
+analysis_results/methodology_results.tex
