@@ -1,0 +1,150 @@
+============================================================
+PHASE 3: ADVANCED ANALYSIS
+============================================================
+
+Loading data...
+  Works: 24,768, Authorships: 223,453
+
+--- Section 5.8: Pre-COVID vs Post-COVID ---
+  Saved table7_leadership_pre_post_covid.csv
+  First author:
+    Ghanaian: 24.5% -> 26.6%
+    Dual-affiliated: 21.6% -> 17.4%
+    Non-Ghanaian: 53.9% -> 56.0%
+  Last author:
+    Ghanaian: 19.9% -> 23.3%
+    Dual-affiliated: 12.8% -> 11.2%
+    Non-Ghanaian: 67.3% -> 65.5%
+  Corresponding author:
+    Ghanaian: 22.6% -> 25.5%
+    Dual-affiliated: 19.0% -> 13.8%
+    Non-Ghanaian: 58.4% -> 60.7%
+
+  Chi-square pre vs post COVID:
+    First author: chi2(2) = 69.20, p < 0.001
+    Last author: chi2(2) = 46.89, p < 0.001
+    Corresponding author: chi2(2) = 149.06, p < 0.001
+  Saved chart_18_pre_post_covid_comparison.png and .svg
+  Saved chart_19_covid_marker_timeline.png and .svg
+
+--- Section 5.9: Partner Bloc Analysis ---
+  Saved table8_leadership_by_partner_bloc.csv
+  Western: N=10,836, GH first author %=54.4
+  East Asian: N=1,788, GH first author %=45.2
+  South Asian: N=441, GH first author %=48.3
+  African: N=2,671, GH first author %=61.2
+  Latin American: N=46, GH first author %=54.4
+  MENA: N=222, GH first author %=61.7
+  Multi-bloc: N=8,691, GH first author %=27.1
+  Saved chart_20_leadership_by_partner_bloc.png and .svg
+  Computing trends by bloc...
+  Saved chart_21_first_author_trend_by_bloc.png and .svg
+  Saved chart_22_collaboration_growth_by_bloc.png and .svg
+
+  Western vs Non-Western (binary) chi-square:
+    First author: Western=54.4%, Non-Western=52.0%, chi2=9.55, p = 0.002
+    Last author: Western=39.1%, Non-Western=42.9%, chi2=22.98, p < 0.001
+    Corresponding author: Western=51.5%, Non-Western=48.8%, chi2=13.13, p < 0.001
+
+--- Country Deep Dives ---
+  China: N=2,040, GH first author=30.7%. Saved table9_country_deep_dive_china.csv
+  India: N=1,414, GH first author=23.4%. Saved table10_country_deep_dive_india.csv
+  South Africa: N=3,063, GH first author=37.1%. Saved table11_country_deep_dive_south_africa.csv
+  Brazil: N=514, GH first author=11.5%. Saved table_s6_brazil_deep_dive.csv
+
+--- Section 6.1: Logistic Regression ---
+  VIF check for year_centered and covid_era:
+    const: VIF = 18.90
+    year_centered: VIF = 2.80
+    covid_era: VIF = 2.80
+
+  Model 1 - First Author (all predictors):
+  Model 1 (all predictors): AIC=30693.5, pseudo-R2=0.1003
+    year_centered: OR=1.019 (1.011-1.027), p=< 0.001
+    country_count: OR=0.69 (0.667-0.712), p=< 0.001
+    author_count: OR=0.978 (0.972-0.983), p=< 0.001
+    has_funding_bool: OR=0.783 (0.739-0.83), p=< 0.001
+    is_oa_bool: OR=1.213 (1.138-1.293), p=< 0.001
+    covid_era: OR=0.899 (0.82-0.984), p=0.022
+    bloc_East Asian: OR=0.53 (0.468-0.601), p=< 0.001
+    bloc_Multi-bloc: OR=0.645 (0.578-0.719), p=< 0.001
+    bloc_South Asian: OR=0.519 (0.423-0.636), p=< 0.001
+    bloc_Western: OR=0.853 (0.781-0.933), p=< 0.001
+    field_Engineering: OR=1.259 (1.119-1.417), p=< 0.001
+
+  Model 2 - Last Author (all predictors):
+  Model 2 (all predictors): AIC=28726.0, pseudo-R2=0.0892
+    const: OR=1.294 (1.063-1.574), p=0.010
+    country_count: OR=0.707 (0.681-0.734), p=< 0.001
+    author_count: OR=0.961 (0.954-0.968), p=< 0.001
+    has_funding_bool: OR=0.667 (0.627-0.71), p=< 0.001
+    is_oa_bool: OR=1.347 (1.26-1.441), p=< 0.001
+    covid_era: OR=1.196 (1.087-1.316), p=< 0.001
+    bloc_East Asian: OR=0.594 (0.523-0.676), p=< 0.001
+    bloc_MENA: OR=0.75 (0.566-0.994), p=0.045
+    bloc_Multi-bloc: OR=0.755 (0.674-0.845), p=< 0.001
+    bloc_Other: OR=1.832 (1.107-3.033), p=0.018
+    bloc_Western: OR=0.777 (0.711-0.848), p=< 0.001
+    field_Engineering: OR=2.035 (1.788-2.317), p=< 0.001
+    field_Health Professions: OR=1.696 (1.468-1.96), p=< 0.001
+    field_Medicine: OR=1.486 (1.321-1.672), p=< 0.001
+    field_Nursing: OR=1.272 (1.072-1.509), p=0.006
+    field_Other: OR=1.285 (1.098-1.503), p=0.002
+
+  Model 3 - Corresponding (all predictors):
+  Model 3 (all predictors): AIC=31003.7, pseudo-R2=0.0895
+    year_centered: OR=1.018 (1.01-1.026), p=< 0.001
+    country_count: OR=0.749 (0.728-0.772), p=< 0.001
+    author_count: OR=0.979 (0.974-0.985), p=< 0.001
+    has_funding_bool: OR=0.724 (0.683-0.767), p=< 0.001
+    is_oa_bool: OR=1.369 (1.284-1.46), p=< 0.001
+    bloc_East Asian: OR=0.435 (0.383-0.494), p=< 0.001
+    bloc_Multi-bloc: OR=0.619 (0.556-0.688), p=< 0.001
+    bloc_Western: OR=0.819 (0.75-0.895), p=< 0.001
+    field_Engineering: OR=1.588 (1.41-1.788), p=< 0.001
+    field_Medicine: OR=1.207 (1.087-1.34), p=< 0.001
+
+--- Forest Plots ---
+  Saved chart_13_forest_plot_model1.png and .svg
+  Saved chart_14_forest_plot_model2.png and .svg
+  Saved chart_15_forest_plot_model3.png and .svg
+
+--- Section 6.2: Time Trend Analysis ---
+  First author Mann-Kendall: tau=-0.1692, p = 0.234, direction=decreasing
+    Sen's slope: -0.0701 pp/year
+  Last author Mann-Kendall: tau=-0.2185, p = 0.123, direction=decreasing
+    Sen's slope: -0.1787 pp/year
+  Corresponding Mann-Kendall: tau=-0.3200, p = 0.023, direction=decreasing
+    Sen's slope: -0.1508 pp/year
+
+--- Section 6.3: Dual-Affiliation Deep Dive ---
+  Dual-affiliated as % of first authors:
+    2000-2010 avg: 25.1%, 2020-2025 avg: 17.7%
+  Top 10 non-GH countries for dual-affiliated authors:
+    US: 8,708
+    ZM: 2,690
+    GB: 2,241
+    ZA: 2,224
+    CN: 1,397
+    AU: 1,058
+    DE: 1,046
+    NG: 981
+    NL: 783
+    IN: 738
+  Saved chart_16_dual_affiliation_trend.png and .svg
+
+--- Section 6.4: Institutional Analysis ---
+  Saved table15_top20_institutions.csv
+  Top 5 institutions:
+    University of Ghana: 7,709 works
+    Kwame Nkrumah University of Science and Technology: 5,692 works
+    Noguchi Memorial Institute for Medical Research: 1,963 works
+    University of Cape Coast: 2,325 works
+    University of Health and Allied Sciences: 2,230 works
+  Saved chart_17_top_institutions.png and .svg
+
+============================================================
+PHASE 3 COMPLETE
+============================================================
+  Tables saved: table7-15
+  Charts saved: chart_13-22, chart_16-17

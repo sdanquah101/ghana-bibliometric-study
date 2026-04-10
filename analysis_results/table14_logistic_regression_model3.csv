@@ -1,0 +1,20 @@
+Variable,OR,95% CI Lower,95% CI Upper,p-value
+const,1.617,1.35,1.938,< 0.001
+year_centered,1.018,1.01,1.026,< 0.001
+country_count,0.749,0.728,0.771,< 0.001
+author_count,0.98,0.974,0.985,< 0.001
+has_funding_bool,0.724,0.684,0.767,< 0.001
+is_oa_bool,1.368,1.283,1.459,< 0.001
+covid_era,0.984,0.899,1.078,0.736
+bloc_East Asian,0.435,0.383,0.494,< 0.001
+bloc_Latin American,0.817,0.451,1.48,0.504
+bloc_MENA,0.822,0.621,1.087,0.169
+bloc_Multi-bloc,0.62,0.557,0.69,< 0.001
+bloc_Other,0.77,0.478,1.238,0.281
+bloc_South Asian,0.869,0.705,1.07,0.185
+bloc_Western,0.819,0.75,0.895,< 0.001
+field_Engineering,1.59,1.412,1.79,< 0.001
+field_Health Sciences,1.188,1.071,1.318,0.001
+field_Immunology and Microbiology,1.148,0.974,1.354,0.099
+field_Neuroscience,0.871,0.658,1.151,0.330
+field_Other,1.097,0.867,1.388,0.441

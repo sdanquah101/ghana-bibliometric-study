@@ -1,0 +1,95 @@
+============================================================
+PHASE 2: DESCRIPTIVE ANALYSIS & CORE LEADERSHIP
+============================================================
+
+Loading prepared data...
+  Works: 24,768, Authorships: 223,453
+
+--- Table 1: Study Characteristics ---
+  Saved table1_study_characteristics.csv
+
+--- Chart 1: Publications by Year ---
+  Saved chart_01_publications_by_year.png and .svg
+
+--- Chart 2: Field Composition Over Time ---
+  Saved chart_02_field_composition.png and .svg
+
+--- Chart 3: Top 20 Partner Countries ---
+  Saved chart_03_top20_partner_countries.png and .svg
+  Computing partner country leadership table...
+  Saved table_s5_partner_country_leadership_full.csv
+
+--- Section 5.1: Overall Leadership Proportions ---
+  Saved table2_leadership_overall.csv
+            Position  Ghanaian % Ghanaian 95% CI  Dual-affiliated % Dual-affiliated 95% CI  Non-Ghanaian % Non-Ghanaian 95% CI
+        First author        25.8       25.3-26.3               19.1              18.6-19.6            55.1           54.5-55.8
+         Last author        22.0       21.5-22.5               11.8              11.4-12.2            66.2           65.6-66.8
+Corresponding author        24.5       24.0-25.0               15.6              15.2-16.0            59.9           59.4-60.5
+
+  Chi-square goodness-of-fit tests:
+    First author: chi2(2) = 4212.26, p < 0.001
+    Last author: chi2(2) = 407.07, p < 0.001
+    Corresponding author: chi2(2) = 2372.25, p < 0.001
+
+--- Chart 4: Leadership by Position ---
+  Saved chart_04_leadership_overall.png and .svg
+
+--- Section 5.2: Temporal Trends ---
+  Saved table3_leadership_by_year.csv
+  Saved chart_05_first_author_trend.png and .svg
+  Saved chart_06_last_author_trend.png and .svg
+  Saved chart_07_corresponding_author_trend.png and .svg
+
+  Trend tests (logistic regression with year as predictor):
+    First author: OR=0.994 (0.990-0.998), p = 0.008, decreasing
+    Last author: OR=1.001 (0.996-1.006), p = 0.685, increasing
+    Corresponding: OR=0.993 (0.989-0.997), p < 0.001, decreasing
+
+--- Section 5.3: Leadership by Partner Country ---
+  Saved table4_leadership_by_partner_country.csv
+
+--- Chart 8: Heatmap Country x Period ---
+  Saved chart_08_heatmap_country_period.png and .svg
+
+--- Section 5.4: Leadership by Partner Region ---
+  Saved chart_09_leadership_by_region.png and .svg
+
+  North-South vs South-South hypothesis test:
+    First author: Western GH%=54.4%, African GH%=61.2%, chi2=39.48, p < 0.001
+    Last author: Western GH%=39.1%, African GH%=48.8%, chi2=82.04, p < 0.001
+    Corresponding author: Western GH%=51.5%, African GH%=60.6%, chi2=80.31, p < 0.001
+
+--- Section 5.5: Leadership by Field ---
+  Saved table5_leadership_by_field.csv
+  Saved chart_10_leadership_by_field.png and .svg
+
+--- Section 5.6: Leadership by Funding ---
+  Saved table6_leadership_by_funding.csv
+  Saved chart_11_leadership_by_funding.png and .svg
+
+  Chi-square: Northern funded vs Ghanaian funded vs No funding:
+    First author: chi2(2) = 634.57, p < 0.001
+    Last author: chi2(2) = 488.43, p < 0.001
+    Corresponding author: chi2(2) = 1206.93, p < 0.001
+
+--- Section 5.7: Citation Impact ---
+  Using metric: FWCI (coverage: 91.6%)
+    Ghanaian: median=0.86, IQR=(0.00-2.39), N=5,866
+    Dual-affiliated: median=0.80, IQR=(0.00-2.35), N=4,233
+    Non-Ghanaian: median=1.27, IQR=(0.20-3.42), N=12,585
+
+  Mann-Whitney U tests:
+    Ghanaian vs Non-Ghanaian: U = 32,400,962, p < 0.001
+    Dual-affiliated vs Non-Ghanaian: U = 23,255,833, p < 0.001
+
+  Top 10% papers by first author category:
+    Ghanaian: 1,328/6,390 (20.8%)
+    Dual-affiliated: 957/4,722 (20.3%)
+    Non-Ghanaian: 3,938/13,656 (28.8%)
+  Saved chart_12_citations_by_leader.png and .svg
+
+============================================================
+PHASE 2 COMPLETE
+============================================================
+  Tables saved: table1-6, table_s5
+  Charts saved: chart_01 through chart_12 (excluding 13-17)

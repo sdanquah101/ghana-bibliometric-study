@@ -1,0 +1,19 @@
+﻿=== BIVARIATE TREND (year only) ===
+  First: coeff=-0.00600, OR=0.9940 (0.9896-0.9985), DECREASING
+  Last: coeff=0.00097, OR=1.0010 (0.9963-1.0057), INCREASING
+  Corresponding: coeff=-0.00728, OR=0.9928 (0.9886-0.9969), DECREASING
+
+=== MULTIVARIATE (year_centered from model) ===
+  First: OR=1.019 -> INCREASING after controls
+  Last: year not significant (p=0.685)
+  Corresponding: OR=1.018 -> INCREASING after controls
+
+=== MULTI-BLOC CONTEXT ===
+  N=8,691 (35.1% of study set)
+
+=== INSTITUTIONAL LEADERSHIP RATES ===
+  University of Ghana: N=7,709, First=44.5%, Last=33.0%, Corr=38.7%
+  Kwame Nkrumah University of Science and Technology: N=5,692, First=52.3%, Last=38.2%, Corr=46.4%
+  Noguchi Memorial Institute for Medical Research: N=1,963, First=49.6%, Last=34.4%, Corr=38.7%
+  University of Cape Coast: N=2,325, First=55.4%, Last=37.3%, Corr=49.2%
+  University of Health and Allied Sciences: N=2,230, First=55.4%, Last=39.2%, Corr=50.7%

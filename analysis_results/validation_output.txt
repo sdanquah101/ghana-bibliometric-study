@@ -1,0 +1,8 @@
+Study works: 24,768
+Study authorships: 223,453
+Unique authors: 93,203
+Unique institutions: 13,623
+Unique countries: 203
+Corresponding author coverage: 99.9%
+Funding coverage: 38.9%
+FWCI coverage: 91.6%

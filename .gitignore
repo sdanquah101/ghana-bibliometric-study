@@ -1,0 +1,21 @@
+# Raw data files (too large for GitHub)
+*.jsonl
+works_metadata.csv
+works_keywords.csv
+works_topics.csv
+works_funding.csv
+works_sdgs.csv
+authorships.csv
+author_affiliations.csv
+
+# Filtered intermediate data
+filtered_biomed_engineering/*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Intermediate parquet files
+intermediate_data/
+*.parquet

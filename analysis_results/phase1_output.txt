@@ -1,0 +1,140 @@
+============================================================
+PHASE 1: DATA PREPARATION & VALIDATION
+============================================================
+
+[1/8] Loading CSV files...
+  works_metadata_filtered.csv: 46,945 rows
+  authorships_filtered.csv: 314,267 rows
+  author_affiliations_filtered.csv: 429,234 rows
+  works_topics_filtered.csv: 129,349 rows
+  works_funding_filtered.csv: 32,945 rows
+  works_keywords_filtered.csv: 528,158 rows
+  works_sdgs_filtered.csv: 30,239 rows
+
+[2/8] Filtering to study set...
+  Total works in filtered set: 46,945
+  After year filter (2000-2025): 41,788
+  After intl collab filter: 25,949
+  After >=2 authors filter: 24,768  <- FINAL STUDY SET
+  Authorships in study set: 223,453
+  Affiliations in study set: 320,537
+  Topics in study set: 69,961
+  Funding rows in study set: 28,541
+  Keywords in study set: 292,364
+  SDGs in study set: 16,105
+
+[3/8] Creating affiliation categories...
+  Affiliation categories assigned:
+    Non-Ghanaian: 153,305 (68.6%)
+    Ghanaian: 51,647 (23.1%)
+    Dual-affiliated: 18,501 (8.3%)
+
+[4/8] Creating corresponding author flag...
+  Works with >=1 corresponding author: 24,752 (99.9%)
+
+[5/8] Assigning partner blocs, COVID era, and time periods...
+  Partner bloc distribution:
+    Western: 10,836 (43.8%)
+    Multi-bloc: 8,691 (35.1%)
+    African: 2,671 (10.8%)
+    East Asian: 1,788 (7.2%)
+    South Asian: 441 (1.8%)
+    MENA: 222 (0.9%)
+    Other: 73 (0.3%)
+    Latin American: 46 (0.2%)
+
+  COVID era:
+    Pre-COVID (2000-2019): 9,675 (39.1%)
+    Post-COVID (2020-2025): 15,093 (60.9%)
+
+[6/8] Classifying funders...
+  Funder category distribution:
+    Other/Unclassified: 19,169
+    International (Northern): 8,376
+    Ghanaian: 996
+  Work-level funder categories:
+    No funding data: 15,130 (61.1%)
+    International (Northern): 4,566 (18.4%)
+    Other/Unclassified: 4,500 (18.2%)
+    Ghanaian: 572 (2.3%)
+
+[7/8] Identifying COVID-related papers...
+  COVID-related papers: 1,175 (4.7%)
+
+[8/8] Saving processed data...
+  Saved study_works.csv (24,768 rows)
+
+
+============================================================
+STUDY DATASET SUMMARY
+------------------------------------------------------------
+Total works in filtered set:           46,945
+After year filter (2000-2025):         41,788
+After intl collab filter:              25,949
+After >=2 authors filter:              24,768  <- FINAL STUDY SET
+Total authorships:                     223,453
+Unique authors:                        93,203
+Unique institutions:                   13,623
+Unique countries:                      203
+
+Median authors per paper (IQR):        6 (4-10)
+Median countries per paper (IQR):      2 (2-3)
+
+AFFILIATION CATEGORY DISTRIBUTION (all authorships):
+  Ghanaian:                                  51,647 (23.1%)
+  Dual-affiliated:                           18,501 (8.3%)
+  Non-Ghanaian:                             153,305 (68.6%)
+
+AUTHOR POSITION DISTRIBUTION:
+  First:                                     24,768
+  Middle:                                   174,064
+  Last:                                      24,621
+
+DATA COVERAGE:
+  Works with corresponding author:     24,752 (99.9%)
+  Works with funding data:             9,638 (38.9%)
+  Works with FWCI:                     22,684 (91.6%)
+  Works with abstract:                 20,146 (81.3%)
+  Works with author truncation:        0 (0.0%)
+
+TOP 10 FUNDERS:
+   1. National Institutes of Health                      1,264 works
+   2. Medical Research Council                             848 works
+   3. Bill and Melinda Gates Foundation                    781 works
+   4. Wellcome Trust                                       747 works
+   5. University of Ghana                                  672 works
+   6. National Natural Science Foundation of China         493 works
+   7. European Commission                                  438 works
+   8. Kwame Nkrumah University of Science and Technology   357 works
+   9. Fogarty International Center                         328 works
+  10. World Health Organization                            328 works
+
+FUNDING SOURCE DISTRIBUTION:
+  funder: 21,020
+  award: 7,521
+
+DOMAIN DISTRIBUTION:
+  Health Sciences                            17,195 (69.4%)
+  Physical Sciences                           4,105 (16.6%)
+  Life Sciences                               3,468 (14.0%)
+
+PARTNER BLOC DISTRIBUTION:
+  Western:                                   10,836 (43.8%)
+  African:                                    2,671 (10.8%)
+  East Asian:                                 1,788 (7.2%)
+  South Asian:                                  441 (1.8%)
+  MENA:                                         222 (0.9%)
+  Latin American:                                46 (0.2%)
+  Multi-bloc:                                 8,691 (35.1%)
+  Other:                                         73 (0.3%)
+
+COVID ERA:
+  Pre-COVID (2000-2019):               9,675 (39.1%)
+  Post-COVID (2020-2025):              15,093 (60.9%)
+
+COVID-RELATED PAPERS:
+  Identified:                          1,175 (4.7%)
+
+============================================================
+PHASE 1 COMPLETE -- Review numbers above before proceeding.
+============================================================
