@@ -41,8 +41,6 @@ Publication metadata retrieved from [OpenAlex](https://openalex.org/), an open-a
 All outputs are saved to `analysis_results/`:
 - **22 charts** (PNG format) covering temporal trends, leadership distributions, forest plots, and more
 - **21+ CSV tables** with detailed statistical results
-- **LaTeX manuscript** (`methodology_results.tex`) — full methodology and results section
-- **Findings document** (`findings_document.md`) — 5,000-word forensically verified narrative
 
 ## Dependencies
 
