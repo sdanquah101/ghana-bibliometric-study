@@ -1,0 +1,65 @@
+{
+  "fairlie": {
+    "total_gap_pp": 6.6,
+    "explained_pp": 6.6,
+    "explained_pct": 99.8,
+    "unexplained_pp": 0.0,
+    "unexplained_pct": 0.2,
+    "bilateral_rate": 53.2,
+    "multibloc_rate": 26.0
+  },
+  "icc": {
+    "icc_first": 0.0255,
+    "icc_last": 0.0236,
+    "icc_first_pct": 2.6,
+    "icc_last_pct": 2.4,
+    "n_institutions": 109,
+    "median_papers_per_inst": 25,
+    "gee_rho": "The correlation between two observations in the same cluster is 0.005"
+  },
+  "fwci_ols": {
+    "gh_first_coef": -0.4127,
+    "gh_first_p": 0.0,
+    "gh_last_coef": -0.1369,
+    "gh_last_p": 0.0187,
+    "r_squared": 0.0735,
+    "n": 19329
+  },
+  "mediation": {
+    "path_a": 0.5495,
+    "path_a_p": 0.0,
+    "path_b": -0.6555,
+    "path_b_p": 0.0,
+    "total_effect": -1.1666,
+    "direct_effect": -0.8616,
+    "indirect_effect": -0.305,
+    "pct_mediated": 26.1,
+    "sobel_z": -23.411,
+    "sobel_p": 0.0
+  },
+  "fractional": {
+    "mean_frac_credit": 0.396,
+    "bilateral_frac": 0.482,
+    "multibloc_frac": 0.25,
+    "mwu_p": 0.0,
+    "multibloc_coef_logit": -1.1757,
+    "multibloc_p_logit": 0.0
+  },
+  "network": {
+    "n_nodes": 85,
+    "n_edges": 874,
+    "degree_first_r": 0.189,
+    "degree_first_p": 0.083,
+    "degree_last_r": -0.039,
+    "degree_last_p": 0.7206,
+    "betweenness_first_r": 0.042,
+    "betweenness_first_p": 0.7046,
+    "betweenness_last_r": -0.07,
+    "betweenness_last_p": 0.5272
+  },
+  "psm": {
+    "att_first_pp": -4.4,
+    "att_last_pp": -8.9,
+    "n_quintiles": 5
+  }
+}

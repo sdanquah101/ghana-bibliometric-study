@@ -1,0 +1,14 @@
+Feature,Importance
+is_bilateral,0.2378076
+country_count,0.23306672
+is_multibloc,0.22257257
+is_african,0.036823582
+is_oa_int,0.03608336
+log_author_count,0.033323675
+bloc_encoded,0.031605992
+author_count,0.030528791
+is_western,0.02988949
+has_funding_int,0.028763503
+year_centered,0.027901415
+field_encoded,0.027195524
+year_centered_sq,0.024437746

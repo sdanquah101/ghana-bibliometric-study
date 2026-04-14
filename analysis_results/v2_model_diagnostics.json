@@ -1,0 +1,26 @@
+{
+  "gh_first_A": {
+    "n": 21203,
+    "n_positive": 9146,
+    "auc": 0.6895,
+    "brier": 0.2187,
+    "pseudo_r2": 0.0854,
+    "aic": 26555.6
+  },
+  "gh_last_A": {
+    "n": 21203,
+    "n_positive": 6679,
+    "auc": 0.6835,
+    "brier": 0.1971,
+    "pseudo_r2": 0.0759,
+    "aic": 24452.7
+  },
+  "gh_corr_A": {
+    "n": 21203,
+    "n_positive": 8702,
+    "auc": 0.6916,
+    "brier": 0.216,
+    "pseudo_r2": 0.0861,
+    "aic": 26275.3
+  }
+}

@@ -1,26 +1,28 @@
-# Raw data files (too large for GitHub)
-*.jsonl
+# ── Manuscript text files ──────────────────────────────────────
+*.tex
+*.md
+*.docx
+
+# ── Raw data files (root level) ───────────────────────────────
+works_raw.jsonl
 works_metadata.csv
 works_keywords.csv
 works_topics.csv
-works_funding.csv
 works_sdgs.csv
+works_funding.csv
 authorships.csv
 author_affiliations.csv
 
-# Filtered intermediate data
-filtered_biomed_engineering/*.csv
+# ── Filtered data directory (large CSVs) ─────────────────────
+filtered_biomedical/
 
-# Python cache
+# ── Intermediate parquet files ────────────────────────────────
+analysis_results/intermediate/
+
+# ── Python cache ──────────────────────────────────────────────
 __pycache__/
 *.pyc
-*.pyo
 
-# Intermediate parquet files
-intermediate_data/
-*.parquet
-
-# Manuscript drafts (kept locally only)
-analysis_results/findings_document.md
-analysis_results/findings_summary.md
-analysis_results/methodology_results.tex
+# ── Temp files ────────────────────────────────────────────────
+~$*
+*.tmp

@@ -1,0 +1,141 @@
+{
+  "partner_type_summary": [
+    {
+      "Partner_type": "Traditional Western",
+      "N": 9236,
+      "Pct_of_total": 43.6,
+      "GH_first_pct": 52.7,
+      "GH_first_CI": "[0.5, 0.5]",
+      "GH_last_pct": 37.0,
+      "GH_last_CI": "[0.4, 0.4]",
+      "Median_team": 6,
+      "Mean_countries": 2.3,
+      "Pct_funded": 38.4,
+      "Pct_OA": 74.3
+    },
+    {
+      "Partner_type": "Emerging Power",
+      "N": 890,
+      "Pct_of_total": 4.2,
+      "GH_first_pct": 41.8,
+      "GH_first_CI": "[0.4, 0.5]",
+      "GH_last_pct": 29.9,
+      "GH_last_CI": "[0.3, 0.3]",
+      "Median_team": 6,
+      "Mean_countries": 2.0,
+      "Pct_funded": 39.3,
+      "Pct_OA": 61.6
+    },
+    {
+      "Partner_type": "African",
+      "N": 1454,
+      "Pct_of_total": 6.9,
+      "GH_first_pct": 56.6,
+      "GH_first_CI": "[0.5, 0.6]",
+      "GH_last_pct": 54.4,
+      "GH_last_CI": "[0.5, 0.6]",
+      "Median_team": 5,
+      "Mean_countries": 2.2,
+      "Pct_funded": 25.8,
+      "Pct_OA": 84.4
+    },
+    {
+      "Partner_type": "Mixed",
+      "N": 8621,
+      "Pct_of_total": 40.7,
+      "GH_first_pct": 29.6,
+      "GH_first_CI": "[0.3, 0.3]",
+      "GH_last_pct": 20.5,
+      "GH_last_CI": "[0.2, 0.2]",
+      "Median_team": 9,
+      "Mean_countries": 5.5,
+      "Pct_funded": 47.8,
+      "Pct_OA": 81.0
+    },
+    {
+      "Partner_type": "Other",
+      "N": 1002,
+      "Pct_of_total": 4.7,
+      "GH_first_pct": 53.5,
+      "GH_first_CI": "[0.5, 0.6]",
+      "GH_last_pct": 43.8,
+      "GH_last_CI": "[0.4, 0.5]",
+      "Median_team": 5,
+      "Mean_countries": 2.2,
+      "Pct_funded": 29.8,
+      "Pct_OA": 73.5
+    }
+  ],
+  "ml_results": {
+    "first": {
+      "cv_auc": 0.7304,
+      "top_features": [
+        "country_count",
+        "log_author_count",
+        "has_US",
+        "year_centered",
+        "has_funding_int"
+      ]
+    },
+    "last": {
+      "cv_auc": 0.7244,
+      "top_features": [
+        "country_count",
+        "log_author_count",
+        "has_funding_int",
+        "year_centered",
+        "is_oa_int"
+      ]
+    }
+  },
+  "emerging_detail": [
+    {
+      "Country": "China",
+      "N_total": 1458,
+      "N_bilateral": 676,
+      "GH_first_all": 28.6,
+      "GH_last_all": 20.0,
+      "GH_first_bilateral": 39.8,
+      "GH_last_bilateral": 24.0,
+      "Median_team": 8,
+      "Pct_funded": 51.5,
+      "Pct_OA": 66.5
+    },
+    {
+      "Country": "India",
+      "N_total": 1271,
+      "N_bilateral": 222,
+      "GH_first_all": 22.7,
+      "GH_last_all": 23.1,
+      "GH_first_bilateral": 46.8,
+      "GH_last_bilateral": 47.3,
+      "Median_team": 11,
+      "Pct_funded": 38.9,
+      "Pct_OA": 80.5
+    },
+    {
+      "Country": "South Africa",
+      "N_total": 2775,
+      "N_bilateral": 813,
+      "GH_first_all": 35.2,
+      "GH_last_all": 19.1,
+      "GH_first_bilateral": 64.8,
+      "GH_last_bilateral": 32.1,
+      "Median_team": 9,
+      "Pct_funded": 50.4,
+      "Pct_OA": 83.7
+    },
+    {
+      "Country": "Brazil",
+      "N_total": 492,
+      "N_bilateral": 17,
+      "GH_first_all": 10.4,
+      "GH_last_all": 6.9,
+      "GH_first_bilateral": 58.8,
+      "GH_last_bilateral": 41.2,
+      "Median_team": 20,
+      "Pct_funded": 55.5,
+      "Pct_OA": 85.0
+    }
+  ]
+}

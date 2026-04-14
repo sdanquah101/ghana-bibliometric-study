@@ -1,0 +1,15 @@
+Outcome,Variable,OR,CI_lo,CI_hi,p_value
+First,pt_African,1.0389,0.9298,1.1609,0.499935
+First,pt_Emerging Power,0.889,0.7621,1.0371,0.134537
+First,pt_Mixed,1.0098,0.9539,1.0689,0.737635
+First,pt_Other,1.2018,1.0435,1.3841,0.010732
+First,log_author_count,0.4253,0.4023,0.4496,0.0
+First,has_funding_int,0.8436,0.6934,1.0263,0.089076
+First,is_oa_int,1.2892,1.1621,1.4302,2e-06
+Last,pt_African,1.0718,0.9847,1.1667,0.10882
+Last,pt_Emerging Power,1.1135,0.9677,1.2812,0.13333
+Last,pt_Mixed,1.0117,0.9357,1.094,0.769583
+Last,pt_Other,1.2125,1.0894,1.3496,0.000421
+Last,log_author_count,0.4427,0.4057,0.483,0.0
+Last,has_funding_int,0.6647,0.554,0.7975,1.1e-05
+Last,is_oa_int,1.4125,1.2615,1.5816,0.0

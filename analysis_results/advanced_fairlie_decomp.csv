@@ -1,0 +1,10 @@
+Variable,Contribution,Pct_of_gap
+log_author_count,0.073,110.3
+has_funding_int,0.0049,7.4
+"field_Biochemistry, Genetics and Molecular Biology",0.0001,0.2
+field_Neuroscience,0.0001,0.2
+field_Engineering,0.0001,0.1
+"field_Pharmacology, Toxicology and Pharmaceutics",0.0001,0.2
+field_Immunology and Microbiology,-0.0001,-0.2
+is_oa_int,-0.0043,-6.4
+year_centered,-0.0078,-11.7

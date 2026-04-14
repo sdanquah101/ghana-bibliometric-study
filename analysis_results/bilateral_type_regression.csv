@@ -1,0 +1,11 @@
+Outcome,Variable,OR,CI_lo,CI_hi,p_value
+First,is_emerging,0.6149,0.4204,0.8995,0.012216
+First,is_african,1.0037,0.7218,1.3955,0.982712
+First,log_author_count,0.6401,0.5575,0.7348,0.0
+First,has_funding_int,0.7975,0.6667,0.954,0.013337
+First,is_oa_int,1.2766,1.1245,1.4493,0.000162
+Last,is_emerging,0.7951,0.6933,0.9117,0.001028
+Last,is_african,1.7682,1.3617,2.2962,1.9e-05
+Last,log_author_count,0.6128,0.5436,0.6908,0.0
+Last,has_funding_int,0.6513,0.5324,0.7969,3.1e-05
+Last,is_oa_int,1.3867,1.1821,1.6268,6e-05

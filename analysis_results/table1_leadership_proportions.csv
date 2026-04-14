@@ -1,0 +1,10 @@
+Position,Category,Count,Total,Percentage,CI_lower,CI_upper
+First,Ghanaian,5522,21203,26.0,25.5,26.6
+First,Dual-affiliated,3624,21203,17.1,16.6,17.6
+First,Non-Ghanaian,12057,21203,56.9,56.2,57.5
+Last,Ghanaian,4558,21061,21.6,21.1,22.2
+Last,Dual-affiliated,2121,21061,10.1,9.7,10.5
+Last,Non-Ghanaian,14382,21061,68.3,67.7,68.9
+Corresponding,Ghanaian,5268,21187,24.9,24.3,25.5
+Corresponding,Dual-affiliated,3434,21187,16.2,15.7,16.7
+Corresponding,Non-Ghanaian,12485,21187,58.9,58.3,59.6

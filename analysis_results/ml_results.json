@@ -1,0 +1,107 @@
+{
+  "xgb_first": {
+    "cv_auc": 0.7124,
+    "cv_accuracy": 0.6551,
+    "cv_f1": 0.6,
+    "top_feature": "is_bilateral",
+    "top_shap": "country_count"
+  },
+  "xgb_last": {
+    "cv_auc": 0.7053,
+    "cv_accuracy": 0.6963,
+    "cv_f1": 0.3568,
+    "top_feature": "country_count",
+    "top_shap": "country_count"
+  },
+  "anomaly": {
+    "n_inequity_outliers": 230,
+    "n_unexpected_gh": 720,
+    "outlier_pct": 1.1
+  },
+  "clustering": {
+    "k": 4,
+    "profiles": [
+      {
+        "Cluster": 1,
+        "N": 3835,
+        "Pct": 18.1,
+        "Median_team": 5,
+        "Mean_countries": 2.5,
+        "Pct_multibloc": 22.4,
+        "Pct_western": 61.9,
+        "Pct_funded": 23.3,
+        "Pct_OA": 0.1,
+        "GH_first_pct": 45.3,
+        "GH_last_pct": 31.4,
+        "Mean_year": 2016.0
+      },
+      {
+        "Cluster": 2,
+        "N": 2267,
+        "Pct": 10.7,
+        "Median_team": 5,
+        "Mean_countries": 2.3,
+        "Pct_multibloc": 0.0,
+        "Pct_western": 0.0,
+        "Pct_funded": 28.4,
+        "Pct_OA": 81.7,
+        "GH_first_pct": 59.6,
+        "GH_last_pct": 46.4,
+        "Mean_year": 2020.0
+      },
+      {
+        "Cluster": 3,
+        "N": 8075,
+        "Pct": 38.1,
+        "Median_team": 6,
+        "Mean_countries": 2.3,
+        "Pct_multibloc": 0.0,
+        "Pct_western": 84.9,
+        "Pct_funded": 42.1,
+        "Pct_OA": 100.0,
+        "GH_first_pct": 53.5,
+        "GH_last_pct": 38.5,
+        "Mean_year": 2019.0
+      },
+      {
+        "Cluster": 4,
+        "N": 7026,
+        "Pct": 33.1,
+        "Median_team": 10,
+        "Mean_countries": 6.1,
+        "Pct_multibloc": 99.6,
+        "Pct_western": 0.0,
+        "Pct_funded": 53.3,
+        "Pct_OA": 91.4,
+        "GH_first_pct": 24.8,
+        "GH_last_pct": 18.7,
+        "Mean_year": 2021.0
+      }
+    ]
+  },
+  "changepoints": {
+    "first_rate": {
+      "pelt_changepoints": [
+        2005,
+        2015,
+        2020
+      ],
+      "binseg_changepoints": [
+        2005,
+        2015
+      ]
+    },
+    "last_rate": {
+      "pelt_changepoints": [
+        2005,
+        2010,
+        2015,
+        2020
+      ],
+      "binseg_changepoints": [
+        2005,
+        2020
+      ]
+    }
+  }
+}

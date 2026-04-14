@@ -1,0 +1,19 @@
+Variable,VIF
+year_centered,111.24
+year_centered_sq,66.35
+log_author_count,10.84
+is_oa_int,4.85
+bloc_Multi-bloc,4.59
+bloc_Western,4.3
+has_funding_int,1.92
+bloc_East Asian,1.48
+bloc_South Asian,1.14
+"field_Biochemistry, Genetics and Molecular Biology",1.14
+field_Immunology and Microbiology,1.07
+field_Engineering,1.05
+bloc_MENA,1.05
+bloc_Other,1.03
+"field_Pharmacology, Toxicology and Pharmaceutics",1.02
+field_Neuroscience,1.02
+bloc_Latin American,1.01
+field_Other,1.0

@@ -1,0 +1,549 @@
+[
+  {
+    "name": "S1_dual_as_GH",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5288,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0408,
+        "p": 0.0488,
+        "sig": "True"
+      },
+      "year_centered_sq": {
+        "OR": 0.9993,
+        "p": 0.2241,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9119,
+        "p": 0.1245,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3774,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8512,
+        "p": 0.0966,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2648,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S2_dual_as_nonGH",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.7141,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0387,
+        "p": 0.2667,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9997,
+        "p": 0.7897,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 1.4319,
+        "p": 0.0094,
+        "sig": "True"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3877,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.745,
+        "p": 0.0029,
+        "sig": "True"
+      },
+      "is_oa_int": {
+        "OR": 1.2957,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S3_4plus_authors",
+    "n": 18019,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5138,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.025,
+        "p": 0.3279,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9997,
+        "p": 0.7034,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9611,
+        "p": 0.5919,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3734,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8175,
+        "p": 0.0711,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.3441,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S4_articles_only",
+    "n": 16672,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5429,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0275,
+        "p": 0.1842,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9997,
+        "p": 0.6038,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9424,
+        "p": 0.3355,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3755,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8428,
+        "p": 0.0455,
+        "sig": "True"
+      },
+      "is_oa_int": {
+        "OR": 1.2605,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S5_max50_authors",
+    "n": 20877,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.531,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.04,
+        "p": 0.0549,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9993,
+        "p": 0.2441,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9135,
+        "p": 0.1415,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3797,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8568,
+        "p": 0.1104,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2626,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S6_no_covid_papers",
+    "n": 20507,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5279,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.043,
+        "p": 0.0436,
+        "sig": "True"
+      },
+      "year_centered_sq": {
+        "OR": 0.9992,
+        "p": 0.198,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9101,
+        "p": 0.1142,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3857,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8442,
+        "p": 0.0821,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2709,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S7_with_covid_era",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.529,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0357,
+        "p": 0.0991,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9996,
+        "p": 0.5646,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9119,
+        "p": 0.1271,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3775,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8503,
+        "p": 0.0965,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2664,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "covid_era": {
+        "OR": 0.9213,
+        "p": 0.1822,
+        "sig": "False"
+      }
+    }
+  },
+  {
+    "name": "S8_standard_logit",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5174,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0451,
+        "p": 0.0006,
+        "sig": "True"
+      },
+      "year_centered_sq": {
+        "OR": 0.9992,
+        "p": 0.0489,
+        "sig": "True"
+      },
+      "bloc_Western": {
+        "OR": 0.8877,
+        "p": 0.0158,
+        "sig": "True"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3705,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8418,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "is_oa_int": {
+        "OR": 1.2654,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S9_cluster_first_author",
+    "n": 21203,
+    "converged": false,
+    "error": "'<' not supported between instances of 'NoneType' and 'str'"
+  },
+  {
+    "name": "S10_gh_only",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.7141,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0387,
+        "p": 0.2667,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 0.9997,
+        "p": 0.7897,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 1.4319,
+        "p": 0.0094,
+        "sig": "True"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3877,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.745,
+        "p": 0.0029,
+        "sig": "True"
+      },
+      "is_oa_int": {
+        "OR": 1.2957,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S11_2000_2024",
+    "n": 18233,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5057,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0198,
+        "p": 0.2996,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": 1.0001,
+        "p": 0.8574,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": 0.9146,
+        "p": 0.1833,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3907,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8575,
+        "p": 0.0908,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2392,
+        "p": 0.0001,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S12_linear_year",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5279,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 1.0171,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "bloc_Western": {
+        "OR": 0.9093,
+        "p": 0.1141,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.3761,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.8572,
+        "p": 0.1224,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": 1.2654,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  },
+  {
+    "name": "S13_linear_AC",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "year_centered": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      },
+      "year_centered_sq": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      },
+      "bloc_Western": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      },
+      "bloc_Multi-bloc": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      },
+      "has_funding_int": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      },
+      "is_oa_int": {
+        "OR": NaN,
+        "p": NaN,
+        "sig": "False"
+      }
+    }
+  },
+  {
+    "name": "S14_last_auth",
+    "n": 21203,
+    "converged": true,
+    "coefficients": {
+      "log_author_count": {
+        "OR": 0.5396,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "year_centered": {
+        "OR": 0.9589,
+        "p": 0.0082,
+        "sig": "True"
+      },
+      "year_centered_sq": {
+        "OR": 1.002,
+        "p": 0.0001,
+        "sig": "True"
+      },
+      "bloc_Western": {
+        "OR": 0.7935,
+        "p": 0.006,
+        "sig": "True"
+      },
+      "bloc_Multi-bloc": {
+        "OR": 0.4241,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "has_funding_int": {
+        "OR": 0.6911,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "is_oa_int": {
+        "OR": 1.3603,
+        "p": 0.0,
+        "sig": "True"
+      }
+    }
+  }
+]

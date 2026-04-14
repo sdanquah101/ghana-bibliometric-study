@@ -1,0 +1,18 @@
+{
+  "total_openalex": 127332,
+  "total_biomedical": 39347,
+  "excluded_outside_years": 4274,
+  "within_study_period": 35073,
+  "excluded_domestic_only": 13081,
+  "international_collabs": 21992,
+  "excluded_single_author": 741,
+  "after_multi_author": 21251,
+  "excluded_retracted": 43,
+  "excluded_paratext": 5,
+  "final_study_set": 21203,
+  "total_authorships": 205638,
+  "unique_authors": 84482,
+  "unique_countries": 202,
+  "first_is_corr_pct": 78.2,
+  "n_multi_corr_authors": 1524
+}

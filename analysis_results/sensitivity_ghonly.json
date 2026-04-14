@@ -1,0 +1,50 @@
+{
+  "combined_first": {
+    "observed": 9146,
+    "expected": 8702.1,
+    "ratio": 1.051,
+    "z": 7.7,
+    "p": 1.3766765505351941e-14,
+    "pct": 43.1
+  },
+  "combined_last": {
+    "observed": 6679,
+    "expected": 8696.1,
+    "ratio": 0.768,
+    "z": -35.01,
+    "p": 0.0,
+    "pct": 31.7
+  },
+  "ghonly_first": {
+    "observed": 5522,
+    "expected": 6284.4,
+    "ratio": 0.879,
+    "z": -14.15,
+    "p": 0.0,
+    "pct": 26.0
+  },
+  "ghonly_last": {
+    "observed": 4558,
+    "expected": 6281.9,
+    "ratio": 0.726,
+    "z": -32.01,
+    "p": 0.0,
+    "pct": 21.6
+  },
+  "rates": {
+    "all_combined_first": 43.1,
+    "all_ghonly_first": 26.0,
+    "all_dual_first": 17.1,
+    "all_combined_last": 31.5,
+    "all_ghonly_last": 21.5,
+    "all_dual_last": 10.0,
+    "bilateral_combined_first": 53.2,
+    "bilateral_ghonly_first": 33.9,
+    "bilateral_combined_last": 38.6,
+    "bilateral_ghonly_last": 28.1,
+    "multibloc_combined_first": 26.0,
+    "multibloc_ghonly_first": 12.6,
+    "multibloc_combined_last": 19.5,
+    "multibloc_ghonly_last": 10.3
+  }
+}
