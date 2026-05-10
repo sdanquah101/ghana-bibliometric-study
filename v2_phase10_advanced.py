@@ -561,12 +561,12 @@ ax.annotate("", xy=(6.8, 3), xytext=(3.2, 3),
 ax.text(5, 2.3, f"c' = {direct_effect:.3f}***\n(total c = {total_effect:.3f})",
         ha="center", fontsize=9, color="#dc2626", fontweight="bold")
 
-ax.text(5, 1.2, f"Indirect (a×b): {indirect_effect:.3f} = {pct_mediated:.0f}% mediated\n"
+ax.text(5, 1.2, f"Indirect (a×b): {indirect_effect:.3f} = {pct_mediated:.0f}% accounted for by team size\n"
         f"Sobel z = {sobel_z:.2f}, p {'< 0.001' if sobel_p < 0.001 else f'= {sobel_p:.4f}'}",
         ha="center", fontsize=10, fontweight="bold",
         bbox=dict(boxstyle="round", facecolor="#fef3c7", edgecolor="#f59e0b"))
 
-ax.set_title("Mediation Analysis: Team Size as Mediator", fontsize=13, fontweight="bold")
+ax.set_title("Descriptive Decomposition: Team Size as Pathway", fontsize=13, fontweight="bold")
 save_chart(fig, "advanced_mediation")
 
 # ==============================================================================

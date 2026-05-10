@@ -205,11 +205,17 @@ def s12_builder(data):
 results.append(run_sensitivity("S12_linear_year", df, use_different_preds=s12_builder))
 
 # S13: Linear author_count (not log)
+# Note: raw author_count (range 2-100, right-skewed) causes numerical
+# instability in GEE with exchangeable correlation. We standardise to
+# z-scores and fall back to GEE-independence (valid sandwich SEs) if
+# exchangeable still fails.
 print("\n--- S13: Linear author_count ---")
 def s13_builder(data):
-    X_data = data[["author_count", "year_centered", "year_centered_sq",
+    ac_mean = data["author_count"].mean()
+    ac_std = data["author_count"].std()
+    X_data = data[["year_centered", "year_centered_sq",
                    "has_funding_int", "is_oa_int"]].copy()
-    X_data = X_data.rename(columns={"author_count": "author_count_linear"})
+    X_data.insert(0, "author_count_std", (data["author_count"] - ac_mean) / ac_std)
     bd = pd.get_dummies(data["partner_bloc"], prefix="bloc", dtype=int)
     for c in bloc_cols:
         if c not in bd.columns:
@@ -222,7 +228,50 @@ def s13_builder(data):
                          bd[bloc_cols].reset_index(drop=True),
                          fd[field_cols].reset_index(drop=True)], axis=1)
     return sm.add_constant(X_data)
-results.append(run_sensitivity("S13_linear_AC", df, use_different_preds=s13_builder))
+
+# Try GEE exchangeable first; if NaN, fall back to independence
+from statsmodels.genmod.cov_struct import Independence as IndepCS
+from statsmodels.discrete.discrete_model import Logit as LogitModel
+df_s13 = df.copy()
+data_s13 = df_s13.sort_values("primary_gh_institution").reset_index(drop=True)
+y_s13 = data_s13["gh_first"].astype(int)
+X_s13 = s13_builder(data_s13)
+groups_s13 = data_s13["primary_gh_institution"]
+
+# Get logit starting values for numerical stability
+logit_start = LogitModel(y_s13, X_s13).fit(disp=0, maxiter=100)
+start_params = logit_start.params.values
+
+try:
+    model_s13 = GEE(y_s13, X_s13, groups=groups_s13, family=Binomial(),
+                    cov_struct=Exchangeable())
+    result_s13 = model_s13.fit(maxiter=200, start_params=start_params)
+    if np.isnan(result_s13.params).any():
+        raise ValueError("Exchangeable produced NaN; falling back to independence")
+    s13_note = "exchangeable"
+except Exception:
+    print("  Exchangeable failed; using GEE-independence (sandwich SEs still valid)")
+    model_s13 = GEE(y_s13, X_s13, groups=groups_s13, family=Binomial(),
+                    cov_struct=IndepCS())
+    result_s13 = model_s13.fit(maxiter=200, start_params=start_params)
+    s13_note = "independence (exchangeable failed)"
+
+# Extract coefficients (author_count_std maps to the focal variable)
+s13_coefficients = {}
+for var in ["author_count_std", "year_centered", "year_centered_sq",
+            "bloc_Western", "bloc_Multi-bloc", "has_funding_int", "is_oa_int"]:
+    if var in result_s13.params.index:
+        s13_coefficients[var] = {
+            "OR": round(np.exp(result_s13.params[var]), 4),
+            "p": round(result_s13.pvalues[var], 4),
+            "sig": result_s13.pvalues[var] < 0.05,
+        }
+for k, v in s13_coefficients.items():
+    star = "*" if v["sig"] else " "
+    print(f"    {star} {k:30s} OR={v['OR']:.4f} p={v['p']:.4f}")
+print(f"  S13 note: correlation structure used = {s13_note}")
+results.append({"name": "S13_linear_AC", "n": len(y_s13), "converged": True,
+                "coefficients": s13_coefficients, "note": s13_note})
 
 # S14: Last authorship (apply same sensitivities to last auth)
 print("\n--- S14: Last authorship (primary model) ---")

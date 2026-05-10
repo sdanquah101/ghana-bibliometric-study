@@ -472,37 +472,43 @@
     "n": 21203,
     "converged": true,
     "coefficients": {
+      "author_count_std": {
+        "OR": 0.5277,
+        "p": 0.0,
+        "sig": "True"
+      },
       "year_centered": {
-        "OR": NaN,
-        "p": NaN,
-        "sig": "False"
+        "OR": 1.0422,
+        "p": 0.0332,
+        "sig": "True"
       },
       "year_centered_sq": {
-        "OR": NaN,
-        "p": NaN,
+        "OR": 0.9992,
+        "p": 0.1723,
         "sig": "False"
       },
       "bloc_Western": {
-        "OR": NaN,
-        "p": NaN,
-        "sig": "False"
+        "OR": 0.851,
+        "p": 0.0141,
+        "sig": "True"
       },
       "bloc_Multi-bloc": {
-        "OR": NaN,
-        "p": NaN,
-        "sig": "False"
+        "OR": 0.3436,
+        "p": 0.0,
+        "sig": "True"
       },
       "has_funding_int": {
-        "OR": NaN,
-        "p": NaN,
-        "sig": "False"
+        "OR": 0.7979,
+        "p": 0.0106,
+        "sig": "True"
       },
       "is_oa_int": {
-        "OR": NaN,
-        "p": NaN,
-        "sig": "False"
+        "OR": 1.2376,
+        "p": 0.0009,
+        "sig": "True"
       }
-    }
+    },
+    "note": "independence (exchangeable failed)"
   },
   {
     "name": "S14_last_auth",

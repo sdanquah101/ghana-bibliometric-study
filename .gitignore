@@ -1,9 +1,10 @@
-# ── Manuscript text files ──────────────────────────────────────
+# ── Document files (not for GitHub) ───────────────────────────
 *.tex
 *.md
 *.docx
+*.pdf
 
-# ── Raw data files (root level) ───────────────────────────────
+# ── Raw data files (too large for GitHub) ─────────────────────
 works_raw.jsonl
 works_metadata.csv
 works_keywords.csv
@@ -23,6 +24,21 @@ analysis_results/intermediate/
 __pycache__/
 *.pyc
 
-# ── Temp files ────────────────────────────────────────────────
+# ── Temp / debug scripts ─────────────────────────────────────
 ~$*
 *.tmp
+extract_output.txt
+generate_supplementary.py
+extract_all_data.py
+verify_supplementary.py
+check_bilateral.py
+check_biomed_ids.py
+check_s2_s10.py
+check_corr.py
+get_coeffs.py
+get_data.py
+fix_review_issues.py
+v2_deep_audit.py
+v2_investigate2.py
+v2_investigate_issues.py
+test_prisma.png

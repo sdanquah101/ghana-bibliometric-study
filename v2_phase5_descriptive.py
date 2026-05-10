@@ -353,7 +353,7 @@ axes[1].set_title("B: Compositional Shift over Time")
 axes[1].legend(loc="center right", fontsize=9)
 axes[1].set_ylim(0, 100)
 
-fig.suptitle("Simpson's Paradox: Compositional Masking of Temporal Gains",
+fig.suptitle("Compositional Masking of Temporal Gains in GH Authorship",
              fontsize=13, fontweight="bold")
 plt.tight_layout()
 save_chart(fig, "chart06_simpsons_paradox")
